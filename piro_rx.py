@@ -5,7 +5,6 @@ class OlaMundo(object):
     def ola_mundo(self,name):
         return f'Ola Mundo para {name}\n'
 
-
 Pyro5.api.Daemon.serveSimple({
     OlaMundo: 'HelloWord',
 }, host="localhost", port=1234, ns=False)
